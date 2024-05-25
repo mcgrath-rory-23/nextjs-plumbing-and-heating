@@ -8,8 +8,8 @@ function Error({ statusCode }) {
         ? `An error ${statusCode} occurred on server`
         : 'An error occurred on client'}
       <div style={{ marginTop: 20 }}>
-        <Link href="/" legacyBehavior>
-          <a>Go back home</a>
+        <Link href="/">
+          <span className="text-blue-600 hover:underline cursor-pointer">Go back home</span>
         </Link>
       </div>
     </div>

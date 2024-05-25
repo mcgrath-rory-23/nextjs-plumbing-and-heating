@@ -6,7 +6,7 @@ export default function Custom404() {
       <h1 className="text-5xl font-extrabold mb-4">Page Not Found</h1>
       <p className="text-lg mb-4">Sorry, we couldn&apos;t find the page you&apos;re looking for.</p>
       <Link href="/">
-        <a className="text-blue-600 hover:underline text-lg">Go back home</a>
+        <span className="text-blue-600 hover:underline text-lg cursor-pointer">Go back home</span>
       </Link>
     </div>
   );
