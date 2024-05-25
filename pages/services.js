@@ -2,21 +2,13 @@ import Navigation from '../components/Navigation';
 
 export default function Services() {
   return (
-    <div>
+    <div className="min-h-screen flex flex-col">
       <Navigation />
-      <main className="flex flex-col items-center p-8">
-        <section className="max-w-4xl mb-8">
-          <h1 className="text-4xl font-bold mb-4">My Services</h1>
-          <ul className="list-disc list-inside">
-            <li className="text-lg mb-2">Pipe Repairs</li>
-            <li className="text-lg mb-2">Leak Detection</li>
-            <li className="text-lg mb-2">Fixture Installation</li>
-            <li className="text-lg mb-2">Water Heater Installation and Repair</li>
-            <li className="text-lg mb-2">Drain Cleaning</li>
-            <li className="text-lg mb-2">Sewer Line Repair</li>
-          </ul>
-          <p className="text-lg mt-4">
-            I provide comprehensive plumbing services to ensure your home or business is always running smoothly.
+      <main className="flex flex-col items-center p-8 bg-gray-100 flex-1">
+        <section className="max-w-4xl w-full mb-8 bg-white p-6 rounded-lg shadow-md">
+          <h1 className="text-5xl font-extrabold mb-4">Our Services</h1>
+          <p className="text-lg mb-4">
+            We offer a wide range of plumbing services including pipe repairs, leak detection, installation of new fixtures, and more.
           </p>
         </section>
       </main>

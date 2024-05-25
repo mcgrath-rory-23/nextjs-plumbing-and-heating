@@ -3,30 +3,26 @@ import Image from 'next/image';
 
 export default function Gallery() {
   return (
-    <div>
+    <div className="min-h-screen flex flex-col">
       <Navigation />
-      <main className="flex flex-col items-center p-8">
-        <section className="max-w-4xl mb-8">
-          <h1 className="text-4xl font-bold mb-4">My Work Gallery</h1>
+      <main className="flex flex-col items-center p-8 bg-gray-100 flex-1">
+        <section className="max-w-4xl w-full mb-8 bg-white p-6 rounded-lg shadow-md">
+          <h1 className="text-5xl font-extrabold mb-4">Our Work Gallery</h1>
+          <p className="text-lg mb-4">
+            Check out some of the work we have done for our satisfied customers.
+          </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div className="relative h-48">
-              <Image src="/images/work1.jpg" alt="Work 1" layout="fill" objectFit="cover" />
-            </div>
-            <div className="relative h-48">
-              <Image src="/images/work2.jpg" alt="Work 2" layout="fill" objectFit="cover" />
-            </div>
-            <div className="relative h-48">
-              <Image src="/images/work3.jpg" alt="Work 3" layout="fill" objectFit="cover" />
-            </div>
-            <div className="relative h-48">
-              <Image src="/images/work4.jpg" alt="Work 4" layout="fill" objectFit="cover" />
-            </div>
-            <div className="relative h-48">
-              <Image src="/images/work5.jpg" alt="Work 5" layout="fill" objectFit="cover" />
-            </div>
-            <div className="relative h-48">
-              <Image src="/images/work6.jpg" alt="Work 6" layout="fill" objectFit="cover" />
-            </div>
+            {[1, 2, 3, 4, 5, 6].map((num) => (
+              <div key={num} className="relative h-64 w-full">
+                <Image
+                  src={`/images/work${num}.jpg`}
+                  alt={`Work ${num}`}
+                  layout="fill"
+                  objectFit="cover"
+                  className="rounded-lg shadow-md"
+                />
+              </div>
+            ))}
           </div>
         </section>
       </main>
