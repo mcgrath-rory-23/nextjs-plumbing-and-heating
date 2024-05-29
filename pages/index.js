@@ -12,6 +12,14 @@ export default function Home() {
       <Navigation />
 
       <main className="flex flex-col items-center p-8 bg-gray-100 flex-1">
+      <section id="about" className="max-w-4xl w-full mb-8 bg-white p-6 rounded-lg shadow-md">
+          <h2 className="text-4xl font-semibold mb-4">About Us</h2>
+          <p className="text-lg mb-4">
+            Learn more about me, your trusted local plumber with over 15 years of experience in delivering high-quality plumbing services.
+          </p>
+          <a href="/about" className="text-blue-600 hover:underline cursor-pointer">Read more about us</a>
+        </section>
+
         <section id="services" className="max-w-4xl w-full mb-8 bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
           <h2 className="text-4xl font-semibold mb-4">My Services</h2>
           <p className="text-lg mb-4">
@@ -20,20 +28,20 @@ export default function Home() {
           <a href="#services" className="text-blue-600 hover:underline cursor-pointer">Learn more about my services</a>
         </section>
 
-        <section id="testimonials" className="max-w-4xl w-full mb-8 bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-          <h2 className="text-4xl font-semibold mb-4">Customer Testimonials</h2>
-          <p className="text-lg mb-4">
-            See what my customers are saying about me. I take pride in excellent customer service and high-quality work.
-          </p>
-          <a href="#testimonials" className="text-blue-600 hover:underline cursor-pointer">Read testimonials</a>
-        </section>
-
         <section id="gallery" className="max-w-4xl w-full mb-8 bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
           <h2 className="text-4xl font-semibold mb-4">My Work Gallery</h2>
           <p className="text-lg mb-4">
             Check out some of the work I have done for my satisfied customers.
           </p>
           <a href="#gallery" className="text-blue-600 hover:underline cursor-pointer">View my gallery</a>
+        </section>
+
+        <section id="testimonials" className="max-w-4xl w-full mb-8 bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+          <h2 className="text-4xl font-semibold mb-4">Customer Testimonials</h2>
+          <p className="text-lg mb-4">
+            See what my customers are saying about me. I take pride in excellent customer service and high-quality work.
+          </p>
+          <a href="#testimonials" className="text-blue-600 hover:underline cursor-pointer">Read testimonials</a>
         </section>
 
         <section id="contact" className="max-w-4xl w-full mb-8 bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">

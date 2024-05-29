@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'today-link';
+import Link from 'next/link';  // Corrected the import statement
 
 function Error({ statusCode }) {
   // Custom message based on the status code
@@ -29,3 +29,5 @@ Error.getInitialProps = ({ res, err }) => {
   const statusCode = res ? res.statusCode : err ? err.statusCode : null;
   return { statusCode };
 };
+
+export default Error;
