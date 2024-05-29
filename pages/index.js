@@ -17,7 +17,7 @@ export default function Home() {
           <p className="text-lg mb-4">
             I offer a wide range of plumbing services including pipe repairs, leak detection, installation of new fixtures, and more.
           </p>
-          <span className="text-blue-600 hover:underline cursor-pointer">Learn more about my services</span>
+          <a href="#services" className="text-blue-600 hover:underline cursor-pointer">Learn more about my services</a>
         </section>
 
         <section id="testimonials" className="max-w-4xl w-full mb-8 bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
@@ -25,7 +25,7 @@ export default function Home() {
           <p className="text-lg mb-4">
             See what my customers are saying about me. I take pride in excellent customer service and high-quality work.
           </p>
-          <span className="text-blue-600 hover:underline cursor-pointer">Read testimonials</span>
+          <a href="#testimonials" className="text-blue-600 hover:underline cursor-pointer">Read testimonials</a>
         </section>
 
         <section id="gallery" className="max-w-4xl w-full mb-8 bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
@@ -33,7 +33,7 @@ export default function Home() {
           <p className="text-lg mb-4">
             Check out some of the work I have done for my satisfied customers.
           </p>
-          <span className="text-blue-600 hover:underline cursor-pointer">View my gallery</span>
+          <a href="#gallery" className="text-blue-600 hover:underline cursor-pointer">View my gallery</a>
         </section>
 
         <section id="contact" className="max-w-4xl w-full mb-8 bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
@@ -46,7 +46,7 @@ export default function Home() {
       </main>
 
       <footer className="flex flex-col items-center py-8 bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
-        <p className="mb-2">Call me today: <span className="underline cursor-pointer">+123456789</span></p>
+        <p className="mb-2">Call me today: <a href="tel:+123456789" className="underline cursor-pointer">+123456789</a></p>
         <p>&copy; 2024 Clinton Plumbing & Heating</p>
       </footer>
     </div>

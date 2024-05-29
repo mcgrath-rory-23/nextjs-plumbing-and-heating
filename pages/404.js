@@ -8,6 +8,9 @@ export default function Custom404() {
       <Link href="/">
         <span className="text-blue-600 hover:underline text-lg cursor-pointer">Go back home</span>
       </Link>
+      <p className="mt-4">
+        If you think this was a mistake, please contact our support team or try refreshing the page.
+      </p>
     </div>
   );
 }
